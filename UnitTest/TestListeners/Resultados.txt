@@ -1,0 +1,16 @@
+Iniciando Test
+-----------------------
+Test Case: TcnUno
+Test Name: tname
+-----------------------
+
+FALLA
+Detalles:
+      Expected: 1
+To be equal to: -1
+
+Linea de error: 70
+Tests correctos: 0
+Tests fallidos: 1
+
+El tiempo de ejecuccion de fue: 5 ms
