@@ -5,7 +5,7 @@ RUN apk install --update \
 				python-dev \
 				py-pip \
 		&& pip install pipenv \
-    && pip install Redist \
+    	&& pip install Redist \
 		&& pip install Flask \
 
 WORKDIR /app
