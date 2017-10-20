@@ -1,0 +1,22 @@
+version: 1
+services:
+	app:
+		image: alpine:app
+		ports: 
+			- "4000:80"
+		links: 
+			- redis
+		environments: 
+			- DBNAME=redis
+		networks:
+			- mynet
+	redis:
+		image: redis:latest
+		ports:
+			- "6379:6379"
+		volumes:
+			- data:/data
+		networks:
+			- mynet
+		commands:
+			- redis-server --appendonly yes
