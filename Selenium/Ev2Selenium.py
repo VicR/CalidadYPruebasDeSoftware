@@ -1,4 +1,4 @@
-#A01022462 | A01022462
+#Víctor Rendón Suárez | A01022462
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 i = 1
